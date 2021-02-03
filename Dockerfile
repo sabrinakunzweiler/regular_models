@@ -10,4 +10,4 @@ RUN apt-get -qq update \
  && apt-get -qq clean
 USER sage
 
-RUN sage -pip install git+https://github.com/MCLF/mclf
+RUN sage -pip install git+https://github.com/sabrinakunzweiler/mclf
