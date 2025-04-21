@@ -49,6 +49,8 @@ $$\Lambda := \Delta^{g} \cdot \omega^{\otimes 8g+4},$$
 where $g$ is the genus of the curve, $\Delta$ the discriminant of $f$ and $\omega = \frac{dx}{y} \land \dots \land x^{g-1}\frac{dx}{y}$. This is a canonical element of the curve. In our first example, we obtain the following.
 
 ```
+sage: from regular_models.superelliptic_curves import order_hyperelliptic_discriminant
+sage: from regular_models.superelliptic_curves import covolume
 sage: g = 2
 sage: a = order_hyperelliptic_discriminant(f,v5); a
 26
@@ -70,7 +72,7 @@ sage -pip install git+https://github.com/MCLF/mclf
 ```
 - the Sage/Python package [regular_models](https://github.com/swewers/regular_models) (this repository)
 ``` 
-sage -pip install git+https://github.com/swewers/regular_models
+git clone https://github.com/swewers/regular_models
 ```
 
 We plan to expand the code to be able to handle more general classes of curves, and compute regular models of them. 
